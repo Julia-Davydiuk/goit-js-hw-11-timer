@@ -8,6 +8,8 @@ class CountdownTimer {
       );
       this.mins = document.querySelector(`${this.selector} [data-value="mins"]`);
       this.secs = document.querySelector(`${this.selector} [data-value="secs"]`);
+
+      this.timer()
     }
   
     updateTimer({ days, hours, mins, secs }) {
@@ -44,5 +46,3 @@ class CountdownTimer {
       selector: '#timer-1',
       targetDate: new Date('Apr 1, 2021'),
     });
-  
-  newTimer.timer();
